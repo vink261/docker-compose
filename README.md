@@ -16,3 +16,27 @@ You may need to `docker-machine env [name]`
 ### How to enter container
 
 `docker exec -it [container-name] /bin/bash`
+
+### About Virtual Host
+
+You need to set up virtual host ip in file /etc/hosts
+
+Confirm your docker-machine IP address
+
+`docker-machine ip [name]` 
+
+Mine is [192.168.99.100]
+
+Edit file /etc/hosts in windows
+
+`vi /etc/hosts`
+
+Add
+
+`YourIpAddress YourVirtualDomain`
+
+YourVirtualDomain is set in nginx/nginx_conf/conf.d/virtualhost/**YourVirtualDomain**.conf
+
+Eg:
+
+`192.168.99.100 vinh-test.i-enter.local`
