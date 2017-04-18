@@ -21,21 +21,21 @@ You may need to `docker-machine env [name]`
 
 You need to set up virtual host ip in file /etc/hosts
 
-Confirm your docker-machine IP address
+1. Confirm your docker-machine IP address
 
 `docker-machine ip [name]` 
 
-Mine is [192.168.99.100]
+Mine is **192.168.99.100**
 
-Edit file /etc/hosts in windows
+2. Edit file /etc/hosts in windows
 
 `vi /etc/hosts`
 
 Add
 
-`YourIpAddress YourVirtualDomain`
+`[YourIpAddress] [YourVirtualDomain]`
 
-YourVirtualDomain is set in nginx/nginx_conf/conf.d/virtualhost/**YourVirtualDomain**.conf
+[YourVirtualDomain] is set in nginx/nginx_conf/conf.d/virtualhost/**YourVirtualDomain**.conf
 
 Eg:
 
